@@ -1,0 +1,18 @@
+[package]
+name = "sffkvs"
+version = "0.1.0"
+edition = "2021"
+description = "Simple Flat File Key Value Store"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+scopeguard = "*"
+dirs = "*"
+env_logger = "*"
+log = "*"
+sha2 = "*"
+
+[profile.release]
+debug = 1
+
